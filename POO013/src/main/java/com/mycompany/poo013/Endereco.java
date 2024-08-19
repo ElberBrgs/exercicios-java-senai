@@ -6,9 +6,9 @@ package com.mycompany.poo013;
 
 /**
  *
- * @author aluno.den
+ * @author Outros
  */
-public class Endereco extends Pessoa {
+public class Endereco {
     private String logradouro;
     private String numero;
     private String complemento;
@@ -16,8 +16,7 @@ public class Endereco extends Pessoa {
     private String cidade;
     private UnidadeFederativa uf;
 
-    public Endereco(String logradouro, String numero, String complemento, String cep, String cidade, UnidadeFederativa uf, int id, String nome, String telefone, Endereco endereco) {
-        super(id, nome, telefone, endereco);
+    public Endereco(String logradouro, String numero, String complemento, String cep, String cidade, UnidadeFederativa uf) {
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
@@ -74,4 +73,14 @@ public class Endereco extends Pessoa {
         this.uf = uf;
     }
 
+    @Override
+    public String toString() {
+        return "\nLogradouro: " + logradouro + 
+               "\nNumero: " + numero + 
+               "\nComplemento: " + complemento + 
+               "\nCep: " + cep + 
+               "\nCidade: " + cidade + 
+               "\nUf: " + uf.getTextoUnidadeFederativa();
+    }
+    
 }

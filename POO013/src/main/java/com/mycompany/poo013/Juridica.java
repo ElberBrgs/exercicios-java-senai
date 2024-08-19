@@ -6,7 +6,7 @@ package com.mycompany.poo013;
 
 /**
  *
- * @author aluno.den
+ * @author Outros
  */
 public class Juridica extends Pessoa {
     private String cnpj;
@@ -66,8 +66,13 @@ public class Juridica extends Pessoa {
 
     @Override
     public String toString() {
-        return "===Pessoa Juridica===" + 
-               "cnpj=" + cnpj + ", inscricaoEstadual=" + inscricaoEstadual + ", dataInicio=" + dataInicio + ", dataTermino=" + dataTermino + ", valorContrato=" + valorContrato + '}';
+        return super.toString()+
+               "\n---Pessoa Juridica---" + 
+               "\ncnpj: " + cnpj + 
+                "\nInscricao estadual: " + inscricaoEstadual + 
+                "\nData de inicio: " + dataInicio + 
+                "\nData de termino: " + dataTermino + 
+                "\nValor do contrato: " + valorContrato;
     }
     
 }

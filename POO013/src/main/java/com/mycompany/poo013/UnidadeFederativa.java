@@ -6,7 +6,7 @@ package com.mycompany.poo013;
 
 /**
  *
- * @author aluno.den
+ * @author Outros
  */
 public enum UnidadeFederativa {
     BAHIA("Bahia","BA"),

@@ -6,7 +6,7 @@ package com.mycompany.poo013;
 
 /**
  *
- * @author aluno.den
+ * @author Outros
  */
 public abstract class Pessoa {
     protected int id;
@@ -47,12 +47,11 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "\n------------" +
+        return "\n===Usuario===" +
                "\nId: " + id + 
                "\nNome: " + nome + 
-               "\nTelefone: " + telefone +
-               "\nEndereco: " + endereco ;
+               "\nTelefone: " + telefone+
+                "\n---Endereco---"+endereco;
     }
-    
     
 }

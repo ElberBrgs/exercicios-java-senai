@@ -1,12 +1,13 @@
+package com.mycompany.poo013;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.poo013;
 
 /**
  *
- * @author aluno.den
+ * @author Outros
  */
 public class Fisica extends Pessoa{
     private Sexo sexo;
@@ -67,7 +68,7 @@ public class Fisica extends Pessoa{
     @Override
     public String toString() {
         return super.toString() +
-                "\n=== Pessoa Fisica===" + 
+                "\n---Pessoa Fisica---" + 
                "\nSexo: " + sexo + 
                "\nCpf: " + cpf + 
                "\nRg: " + rg + 
