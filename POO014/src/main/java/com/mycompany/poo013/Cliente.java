@@ -23,5 +23,10 @@ public class Cliente extends Fisica {
     public void setProtocoloAtendimento(String protocoloAtendimento) {
         this.protocoloAtendimento = protocoloAtendimento;
     }
-    
+
+    @Override
+    public String toString() {
+        return super.toString()+
+               "\nProtocolo de Atendimento: " + protocoloAtendimento;
+    }
 }
